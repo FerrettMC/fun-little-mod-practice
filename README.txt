@@ -1,4 +1,4 @@
-
+Blah blah blah dont read this or try this mod unless you want to explode your computer and your brain
 Source installation information for modders
 -------------------------------------------
 This code follows the Minecraft Forge installation methodology. It will apply
