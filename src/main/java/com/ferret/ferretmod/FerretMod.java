@@ -29,6 +29,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
+// floor((abs(x1-x2)+1)/2)+1
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(FerretMod.MODID)
 public class FerretMod
