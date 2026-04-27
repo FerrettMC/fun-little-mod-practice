@@ -65,12 +65,9 @@ public class snake {
                 serverPlayer.sendSystemMessage(Component.literal("Placed snake head"));
                 snake.add(new Point(pos.getX(), pos.getY(), pos.getZ(), "head"));
                 snake.add(new Point(pos.getX() - 1, pos.getY(), pos.getZ(), "body"));
-                snake.add(new Point(pos.getX() - 2, pos.getY(), pos.getZ(), "body"));
                 if (loopPlayer.level() instanceof ServerLevel serverLevel) {
                     BlockPos onePos = new BlockPos(snake.get(1).x, snake.get(1).y, snake.get(1).z);
                     serverLevel.setBlock(onePos, Blocks.BLACK_WOOL.defaultBlockState(), 3);
-                    BlockPos twoPos = new BlockPos(snake.get(2).x, snake.get(2).y, snake.get(2).z);
-                    serverLevel.setBlock(twoPos, Blocks.BLACK_WOOL.defaultBlockState(), 3);
                 }
             }
         }
