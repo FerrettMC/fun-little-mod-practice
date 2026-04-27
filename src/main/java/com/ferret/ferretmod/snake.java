@@ -27,6 +27,7 @@ public class snake {
     private static int tickCounter = 0;
     private static ServerPlayer loopPlayer = null;
 
+    // This should probably be a class instead of a record, when I remake this I should refactor that. 
     record Point(int x, int y, int z, String type) {}
 
     private static LinkedList<Point> snake = new LinkedList<>();
