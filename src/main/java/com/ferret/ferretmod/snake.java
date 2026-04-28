@@ -56,7 +56,7 @@ public class snake {
                     ? stack.getHoverName().getString()
                     : event.getPlacedBlock().getBlock().getName().getString();
 
-            if (blockName.equals("block.minecraft.white_wool") && name.equalsIgnoreCase("snake head")) {
+            if (blockName.equals("block.minec raft.white_wool") && name.equalsIgnoreCase("snake head")) {
                 // just set state and return, let the tick event do the work
                 BlockPos pos = event.getPos();
                 loopPlayer = serverPlayer;
