@@ -33,7 +33,7 @@ public class PlatformPlacer {
                 event.setCanceled(true);
                 return;
             }
-            if (length < 3 || length > 45) {
+            if (length < 3 || length > 100) {
                 player.sendSystemMessage(Component.literal("Not a valid length."));
                 event.setCanceled(true);
                 return;
