@@ -10,6 +10,10 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class BlockBreakListener {
 
+    // Could have a public list like "ControllerPos" and check if the pos of a block broken matches that of one of those blocks
+    // and if it does, change a public str direction which obviously controls the snake direction. Also would have to immediately replace the block
+    // and stuff. Also gonna have to do something when if you make a new game, it replaces the old controller pos list with a new one.
+
     @SubscribeEvent
     public static void onBlockBreak(BlockEvent.BreakEvent event) {
         Player player = event.getPlayer();
